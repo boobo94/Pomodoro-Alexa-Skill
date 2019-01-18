@@ -1,0 +1,34 @@
+{
+  "name": "pomodoro-alexa-skill",
+  "version": "1.0.0",
+  "description": "This is a pomodor timer skill for Amazon Alexa",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel ./lambda/custom/ -d dist",
+    "start": "nodemon",
+    "serveo": "ssh -R 80:localhost:3000 serveo.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boobo94/Pomodoro-Alexa-Skill.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boobo94/Pomodoro-Alexa-Skill/issues"
+  },
+  "homepage": "https://github.com/boobo94/Pomodoro-Alexa-Skill#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "ask-sdk-core": "^2.3.0",
+    "ask-sdk-model": "^1.11.2"
+  }
+}
