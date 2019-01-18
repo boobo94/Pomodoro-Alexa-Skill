@@ -1,0 +1,51 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "pomodoro",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "StartINTENT",
+          "slots": [],
+          "samples": [
+            "Start"
+          ]
+        },
+        {
+          "name": "PassedTimeINTENT",
+          "slots": [],
+          "samples": [
+            "How much time passed"
+          ]
+        },
+        {
+          "name": "RemainingTimeINTENT",
+          "slots": [],
+          "samples": [
+            "How much time left"
+          ]
+        }
+      ],
+      "types": []
+    }
+  }
+}
