@@ -1,2 +1,5 @@
 # NPM dependencies
 node_modules
+
+# build
+dist
