@@ -1,9 +1,7 @@
 
-import { IsIntentType } from '../helpers';
-
 export const Launch = {
   canHandle(handler) {
-    return IsIntentType(handler, 'LaunchRequest')
+    return handler.requestEnvelope.request.type === 'LaunchRequest'
   },
   handle(handler) {
     const { t } = handler.attributesManager.getRequestAttributes();
