@@ -13,6 +13,9 @@ export const handler = Alexa.SkillBuilders.custom()
         Intents.Stop,
         Intents.Cancel,
         Intents.Fallback,
+
+        // Pomodoro
+        Intents.StartIntent,
     )
     .addErrorHandlers(
         Errors.Unknown,
