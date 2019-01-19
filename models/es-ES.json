@@ -4,10 +4,6 @@
       "invocationName": "pomodoro",
       "intents": [
         {
-          "name": "AMAZON.FallbackIntent",
-          "samples": []
-        },
-        {
           "name": "AMAZON.CancelIntent",
           "samples": []
         },
@@ -34,14 +30,14 @@
           "name": "PassedTimeINTENT",
           "slots": [],
           "samples": [
-            "How much time passed"
+            "Cuanto tiempo paso"
           ]
         },
         {
           "name": "RemainingTimeINTENT",
           "slots": [],
           "samples": [
-            "How much time left"
+            "Cuanto tiempo falta"
           ]
         }
       ],
