@@ -6,7 +6,12 @@
   "scripts": {
     "build": "babel ./lambda/custom/ -d dist",
     "start": "nodemon",
-    "serveo": "ssh -R 80:localhost:3000 serveo.net"
+    "serveo": "ssh -R 80:localhost:3000 serveo.net",
+    "deploy": "npm run build && ask deploy",
+    "get:skill": "ask api get-skill --skill-id amzn1.ask.skill.bd763b3f-ae3f-45c2-8106-28e1ddf509ea > skill.json",
+    "get:models": "npm run get:model:en && npm run get:model:es",
+    "get:model:en": "ask api get-model -s amzn1.ask.skill.bd763b3f-ae3f-45c2-8106-28e1ddf509ea -l en-US > models/en-US.json",
+    "get:model:es": "ask api get-model -s amzn1.ask.skill.bd763b3f-ae3f-45c2-8106-28e1ddf509ea -l es-ES > models/es-ES.json"
   },
   "repository": {
     "type": "git",
@@ -23,12 +28,15 @@
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
+    "@types/node": "^10.12.18",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "nodemon": "^1.18.9"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
     "ask-sdk-core": "^2.3.0",
-    "ask-sdk-model": "^1.11.2"
+    "ask-sdk-model": "^1.11.2",
+    "i18next": "^11.3.6",
+    "i18next-sprintf-postprocessor": "^0.2.2"
   }
 }
