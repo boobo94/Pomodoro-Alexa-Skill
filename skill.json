@@ -3,27 +3,30 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Sample Short Description",
-          "examplePhrases": [
-            "Alexa open pomodoro",
-            "hello",
-            "help"
-          ],
-          "name": "skill-sample-nodejs-hello-world",
-          "description": "Sample Full Description"
+          "examplePhrases": [],
+          "keywords": [],
+          "name": "Pomodoro",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/e5be/3547759f444f40c4a2a64b3c4e8e067b/APP_ICON?versionId=bIwBHxFehcT6vcw2q8vessu7KiyEWHSG&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1547991544&Signature=G0DkGlX3lIAQrBxlOOhPvhoAmXw%3D",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/42b3/2e32353a9b3945adafd7d5b0b892cb38/APP_ICON_LARGE?versionId=IiiIl544OaEglS0MMzECRdvGX.KWSja1&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1547991544&Signature=RVQVSRDZRA0cLjDTIN5ByUk4GVQ%3D"
+        },
+        "es-ES": {
+          "examplePhrases": [],
+          "keywords": [],
+          "name": "Pomodoro",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/b7c2/ddd25edc279b481994f726a581ffb728/APP_ICON?versionId=JjFoCI.vujD6N_YAqKXpLY.bClluEo5G&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1547991544&Signature=JLTXrSrLfWKgXnywlOE%2BwrMKNjs%3D",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/a424/df826e9504fe4acbb915f4eb0bcf1033/APP_ICON_LARGE?versionId=6B.ruUp2VevNo4wdaXnVSndME7LIUXN5&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1547991544&Signature=I1bwVUWlN5XX6vb4tGgTB6wxQCk%3D"
         }
       },
       "isAvailableWorldwide": true,
-      "testingInstructions": "Sample Testing Instructions.",
-      "category": "KNOWLEDGE_AND_TRIVIA",
       "distributionCountries": []
     },
     "apis": {
       "custom": {
         "endpoint": {
-          "sourceDir": "lambda/custom",
-          "uri": "pomodoro"
-        }
+          "sslCertificateType": "Wildcard",
+          "uri": "https://cautela.serveo.net"
+        },
+        "interfaces": []
       }
     },
     "manifestVersion": "1.0"
