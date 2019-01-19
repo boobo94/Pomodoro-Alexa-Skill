@@ -3,7 +3,7 @@ export const Unknown = {
         return true;
     },
     handle(handler, error) {
-        console.log(`Error handled: ${error.message}`);
+        console.log(error);
 
         const { t } = handler.attributesManager.getRequestAttributes();
         const speechText = t('UNKNOWN_ERROR');
