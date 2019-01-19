@@ -23,6 +23,7 @@
           "name": "StartINTENT",
           "slots": [],
           "samples": [
+            "Nuevo temporizador",
             "Start"
           ]
         },

@@ -27,6 +27,7 @@
           "name": "StartINTENT",
           "slots": [],
           "samples": [
+            "Start timer",
             "Start"
           ]
         },
