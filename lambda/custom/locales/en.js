@@ -12,5 +12,7 @@ export default {
         // start intent
         "START": "The timer started. You have %s working time. %s",
         "ENDING_SESSION": "Congrats ... now you can take a break.",
+        "PASSED_TIME": "%s passed. %s",
+
     }
 }
