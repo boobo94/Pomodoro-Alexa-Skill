@@ -35,6 +35,7 @@
           "name": "PassedTimeINTENT",
           "slots": [],
           "samples": [
+            "passed",
             "How much time passed"
           ]
         },
