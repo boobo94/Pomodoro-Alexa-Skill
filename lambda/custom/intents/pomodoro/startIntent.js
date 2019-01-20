@@ -19,7 +19,7 @@ export const StartIntent = {
             attributes.state = states.session1
         }
 
-        const speechText = `${t("START", sessionDurationM + ' minutes', addBreaks(sessionDurationS))} ${t("ENDING_SESSION")}`;
+        const speechText = `${t("START", `${sessionDurationM} minutes`, addBreaks(sessionDurationS))} ${t("ENDING_SESSION")}`;
 
         return handler.responseBuilder
             .speak(speechText)

@@ -1,5 +1,3 @@
-
-
 import english from './en'
 import spanish from './es'
 
