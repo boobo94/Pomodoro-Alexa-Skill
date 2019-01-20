@@ -16,7 +16,8 @@ export const handler = Alexa.SkillBuilders.custom()
 
         // Pomodoro
         Intents.StartIntent,
-        Intents.PassedIntent,
+        Intents.PassedTimeIntent,
+        Intents.RemainingTimeIntent,
     )
     .addErrorHandlers(
         Errors.Unknown,

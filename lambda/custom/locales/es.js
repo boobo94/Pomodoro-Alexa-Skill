@@ -12,7 +12,12 @@ export default {
         // start intent
         "START": "El temporizador comenzó. Tienes %s tiempo de trabajo. %s",
         "ENDING_SESSION": "Felicidades ... ahora puedes tomarte un descanso.",
+
+        // passed intent
         "PASSED_TIME": "Pasaron %s. %s",
+
+        // remaining intent
+        "REMAINING_TIME": "Quedan %s. %s",
     },
     moment: {
         relativeTime: {

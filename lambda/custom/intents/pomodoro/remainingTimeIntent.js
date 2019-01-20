@@ -2,9 +2,9 @@ import moment from 'moment'
 import { IsIntentType } from '../helpers';
 import { addBreaks } from './helper'
 
-export const PassedTimeIntent = {
+export const RemainingTimeIntent = {
     canHandle(handler) {
-        return IsIntentType(handler, 'PassedTimeINTENT')
+        return IsIntentType(handler, 'RemainingTimeINTENT')
     },
     handle(handler) {
         const { t } = handler.attributesManager.getRequestAttributes();
@@ -16,7 +16,7 @@ export const PassedTimeIntent = {
         // calculate remaining time
         const remainingSeconds = moment.duration(25, 'minutes').subtract(elapsedSeconds, "seconds").asSeconds()
 
-        const speechText = `${t("PASSED_TIME", start.toNow(true), addBreaks(remainingSeconds))} ${t("ENDING_SESSION")}`
+        const speechText = `${t("REMAINING_TIME", start.add(25, 'minutes').fromNow(true), addBreaks(remainingSeconds))} ${t("ENDING_SESSION")}`
         return handler.responseBuilder
             .speak(speechText)
             .reprompt(speechText)
