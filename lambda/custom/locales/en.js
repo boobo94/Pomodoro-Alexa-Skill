@@ -8,11 +8,12 @@ export default {
         "INCOMPREHENSIBLE": "Sorry, but I don't understand. Can you repeat, please?",
         "INCOMPREHENSIBLE_REPROMT": "Sorry, I don't understand it. Can you reformulate?",
         "GOODBYE": "Goodbye buddy, hear you soon!",
+        "MINUTES": "minutes",
 
+        "NEW_SESSION": "The break finished. Do you want to start a new session?",
         // start intent
         "START": "The timer started. You have %s working time.",
-        "ENDING_SESSION": "Congrats ... now you can take a break.",
-        "MINUTES": "minutes",
+        "ENDING_SESSION": "Congrats ... now you can take %s break.",
 
         // passed intent
         "PASSED_TIME": "%s passed.",

@@ -8,11 +8,12 @@ export default {
         "INCOMPREHENSIBLE": "Lo siento, pero no entiendo. ¿Puede usted repetir por favor?",
         "INCOMPREHENSIBLE_REPROMT": "Lo siento, no lo entiendo. ¿Se puede reformular?",
         "GOODBYE": "Adiós amigo, te escucho pronto!",
+        "MINUTES": "minutos",
 
+        "NEW_SESSION": "El descanso terminó. ¿Quieres iniciar una nueva sesión?",
         // start intent
         "START": "El temporizador comenzó. Tienes %s tiempo de trabajo.",
-        "ENDING_SESSION": "Felicidades ... ahora puedes tomarte un descanso.",
-        "MINUTES": "minutos",
+        "ENDING_SESSION": "Felicidades ... ahora puedes tomarte %s de descanso.",
 
         // passed intent
         "PASSED_TIME": "Pasaron %s.",

@@ -1,7 +1,7 @@
 
 import moment from 'moment'
 import { IsIntentType } from '../helpers';
-import { sessionDurationM, sessionDurationS, states } from './constants';
+import { sessionDurationM, sessionDurationS, states, shortBreakS, shortBreakM } from './constants';
 import { addPause } from './helper'
 
 export const StartIntent = {
@@ -19,7 +19,11 @@ export const StartIntent = {
             attributes.state = states.session1
         }
 
-        const speechText = `${t("START", `${sessionDurationM} ${t("MINUTES")}`)} ${addPause(sessionDurationS)} ${t("ENDING_SESSION")}`;
+        const speechText = `${t("START", `${sessionDurationM} ${t("MINUTES")}`)} 
+                            ${addPause(sessionDurationS)} 
+                            ${t("ENDING_SESSION", `${shortBreakM} ${t("MINUTES")}`)} 
+                            ${addPause(shortBreakS)} 
+                            ${t("NEW_SESSION")}`;
 
         return handler.responseBuilder
             .speak(speechText)
