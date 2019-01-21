@@ -10,14 +10,15 @@ export default {
         "GOODBYE": "Goodbye buddy, hear you soon!",
 
         // start intent
-        "START": "The timer started. You have %s working time. %s",
+        "START": "The timer started. You have %s working time.",
         "ENDING_SESSION": "Congrats ... now you can take a break.",
+        "MINUTES": "minutes",
 
         // passed intent
-        "PASSED_TIME": "%s passed. %s",
+        "PASSED_TIME": "%s passed.",
 
         // remaining intent
-        "REMAINING_TIME": "%s left. %s",
+        "REMAINING_TIME": "%s left.",
 
     }
 }

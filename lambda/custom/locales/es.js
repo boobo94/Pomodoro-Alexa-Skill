@@ -10,14 +10,15 @@ export default {
         "GOODBYE": "Adiós amigo, te escucho pronto!",
 
         // start intent
-        "START": "El temporizador comenzó. Tienes %s tiempo de trabajo. %s",
+        "START": "El temporizador comenzó. Tienes %s tiempo de trabajo.",
         "ENDING_SESSION": "Felicidades ... ahora puedes tomarte un descanso.",
+        "MINUTES": "minutos",
 
         // passed intent
-        "PASSED_TIME": "Pasaron %s. %s",
+        "PASSED_TIME": "Pasaron %s.",
 
         // remaining intent
-        "REMAINING_TIME": "Quedan %s. %s",
+        "REMAINING_TIME": "Quedan %s.",
     },
     moment: {
         relativeTime: {

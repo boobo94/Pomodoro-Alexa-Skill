@@ -1,9 +1,9 @@
 /**
- * @addBreaks - Create a SSML string containing elements of type <break time="{number}s"/>
+ * @addPause - Create a SSML string containing elements of type <break time="{number}s"/>
  * The reason of having this functions is that Amazon doesn't allow breaks bigger that 10s in SSML
  * @param {number} duration - number of seconds
  */
-export const addBreaks = (duration) => {
+export const addPause = (duration) => {
     // first add the decimals if the number is not divisible with 10
     let response = `<break time="${duration % 10}s"/>`
 
