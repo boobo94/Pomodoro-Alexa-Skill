@@ -18,6 +18,8 @@ export const handler = Alexa.SkillBuilders.custom()
         Intents.StartIntent,
         Intents.PassedTimeIntent,
         Intents.RemainingTimeIntent,
+        Intents.AcceptNewSession,
+        Intents.RejectNewSession,
     )
     .addErrorHandlers(
         Errors.Unknown,

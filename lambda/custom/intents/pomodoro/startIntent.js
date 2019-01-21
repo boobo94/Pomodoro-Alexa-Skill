@@ -1,7 +1,6 @@
-
 import moment from 'moment'
 import { IsIntentType } from '../helpers';
-import { sessionDurationM, sessionDurationS, states, shortBreakS, shortBreakM } from './constants';
+import { sessionDurationM, sessionDurationS, shortBreakS, shortBreakM } from './constants';
 import { addPause } from './helper'
 
 export const StartIntent = {
@@ -15,8 +14,10 @@ export const StartIntent = {
         // get the curent time, this will be considered the beginning time of timer
         attributes.startTime = moment().unix();
 
-        if (!attributes.state) {
-            attributes.state = states.session1
+        if (!attributes.session) {
+            attributes.session = 1
+        } else {
+            attributes.session++
         }
 
         const speechText = `${t("START", `${sessionDurationM} ${t("MINUTES")}`)} 

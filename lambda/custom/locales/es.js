@@ -11,6 +11,8 @@ export default {
         "MINUTES": "minutos",
 
         "NEW_SESSION": "El descanso terminó. ¿Quieres iniciar una nueva sesión?",
+        "REJECT_SESSION": "Si quieres una nueva sesión di: Nueva Sesión. Para cerrar la habilidad diga: Cancelar.",
+
         // start intent
         "START": "El temporizador comenzó. Tienes %s tiempo de trabajo.",
         "ENDING_SESSION": "Felicidades ... ahora puedes tomarte %s de descanso.",
