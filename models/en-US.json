@@ -27,6 +27,7 @@
           "name": "StartINTENT",
           "slots": [],
           "samples": [
+            "New session",
             "Start timer",
             "Start"
           ]
@@ -45,6 +46,14 @@
           "samples": [
             "How much time left"
           ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
         }
       ],
       "types": []

@@ -23,6 +23,7 @@
           "name": "StartINTENT",
           "slots": [],
           "samples": [
+            "Nueva sesión",
             "nuevo",
             "Nuevo temporizador",
             "Start"
@@ -41,6 +42,14 @@
           "samples": [
             "Cuanto tiempo falta"
           ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
         }
       ],
       "types": []
