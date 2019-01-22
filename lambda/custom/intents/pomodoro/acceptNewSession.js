@@ -1,5 +1,5 @@
 import { IsIntentType } from '../helpers';
-import { StartIntent } from './startIntent';
+import { NewSessionIntent } from './newSessionIntent';
 
 export const AcceptNewSession = {
     canHandle(handler) {
@@ -10,6 +10,6 @@ export const AcceptNewSession = {
         )
     },
     handle(handler) {
-        return StartIntent.handle(handler)
+        return NewSessionIntent.handle(handler)
     },
 };

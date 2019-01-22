@@ -23,7 +23,6 @@
           "name": "StartINTENT",
           "slots": [],
           "samples": [
-            "Nueva sesión",
             "nuevo",
             "Nuevo temporizador",
             "Start"
@@ -50,6 +49,13 @@
         {
           "name": "AMAZON.NoIntent",
           "samples": []
+        },
+        {
+          "name": "NewSessionINTENT",
+          "slots": [],
+          "samples": [
+            "Nueva sesión"
+          ]
         }
       ],
       "types": []

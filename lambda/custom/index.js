@@ -16,6 +16,7 @@ export const handler = Alexa.SkillBuilders.custom()
 
         // Pomodoro
         Intents.StartIntent,
+        Intents.NewSessionIntent,
         Intents.PassedTimeIntent,
         Intents.RemainingTimeIntent,
         Intents.AcceptNewSession,
