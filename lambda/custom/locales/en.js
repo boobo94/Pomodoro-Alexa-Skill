@@ -14,7 +14,7 @@ export default {
         "REJECT_SESSION": "If you want a new session say: New Session. To close the skill say: Cancel.",
 
         // start intent
-        "START": "The timer started. You have %s working time.",
+        "START": "Session %s. The timer started. You have %s working time.",
         "ENDING_SESSION": "Congrats ... now you can take %s break.",
 
         // passed intent
