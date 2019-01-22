@@ -18,7 +18,8 @@ export const StartIntent = {
         attributes.state = states.PROGRESS
         attributes.session = 1
 
-        const speechText = `${t("START", attributes.session, `${sessionDurationM} ${t("MINUTES")}`)} 
+        const speechText = `${t("WELCOME")} 
+                            ${t("START", attributes.session, `${sessionDurationM} ${t("MINUTES")}`)} 
                             ${addPause(sessionDurationS)} 
                             ${t("ENDING_SESSION", `${shortBreakM} ${t("MINUTES")}`)} 
                             ${addPause(shortBreakS)} 
