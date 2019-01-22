@@ -1,4 +1,5 @@
 import { IsIntentType } from '../helpers';
+import { states } from './constants';
 
 export const RejectNewSession = {
     canHandle(handler) {
@@ -9,7 +10,7 @@ export const RejectNewSession = {
         const attributes = handler.attributesManager.getSessionAttributes()
         const speechText = t("REJECT_SESSION")
 
-        attributes.session = undefined
+        attributes.state = states.DONE
 
         return handler.responseBuilder
             .speak(speechText)
